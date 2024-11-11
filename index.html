@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search services...">
+        </div>
+        <div class="location-finder">
+            <button onclick="findLocation()">Find Location</button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Reliable Services at Your Doorstep</h1>
+            <p>Book trusted daily laborers, electricians, carpenters, and maids in Jaunpur</p>
+            <button class="cta">Book Now</button>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="tabs">
+            <button class="tablink" onclick="openTab(event, 'HomeMaintenance')">Home and Maintenance</button>
+            <button class="tablink" onclick="openTab(event, 'FoodDelivery')">Food Delivery</button>
+            <button class="tablink" onclick="openTab(event, 'SalonSpa')">Salon and Spa</button>
+            <button class="tablink" onclick="openTab(event, 'EventPlanning')">Event Planning</button>
+            <button class="tablink" onclick="openTab(event, 'TechServices')">Tech Services</button>
+            <button class="tablink" onclick="openTab(event, 'Transportation')">Transportation</button>
+            <button class="tablink" onclick="openTab(event, 'OtherServices')">Other Services</button>
+        </div>
+        <div id="HomeMaintenance" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Daily Laborers</h3>
+                    <p>Starting at ₹500/day</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Electricians</h3>
+                    <p>Starting at ₹300/hour</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-tools"></i>
+                    <h3>Carpenters</h3>
+                    <p>Starting at ₹400/hour</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-broom"></i>
+                    <h3>Maids</h3>
+                    <p>Starting at ₹200/hour</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Plumbers</h3>
+                    <p>Starting at ₹350/hour</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-paint-roller"></i>
+                    <h3>Painters</h3>
+                    <p>Starting at ₹500/hour</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-spray-can"></i>
+                    <h3>Cleaning Services</h3>
+                    <p>Starting at ₹1500</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-bug"></i>
+                    <h3>Pest Control</h3>
+                    <p>Starting at ₹1200</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-fan"></i>
+                    <h3>AC Repair and Installation</h3>
+                    <p>Starting at ₹500</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-water"></i>
+                    <h3>Water Purifier Installation and Repair</h3>
+                    <p>Starting at ₹400</p>
+                </div>
+            </div>
+        </div>
+        <div id="FoodDelivery" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Catering Services</h3>
+                    <p>Starting at ₹2000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Bakery and Confectionery Delivery</h3>
+                    <p>Starting at ₹500</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Fresh Fruit and Vegetable Delivery</h3>
+                    <p>Starting at ₹300</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-box"></i>
+                    <h3>Meal Kit Delivery</h3>
+                    <p>Starting at ₹800</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-wine-bottle"></i>
+                    <h3>Wine and Liquor Delivery</h3>
+                    <p>Starting at ₹1000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Coffee and Tea Delivery</h3>
+                    <p>Starting at ₹200</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cookie"></i>
+                    <h3>Snack Delivery</h3>
+                    <p>Starting at ₹150</p>
+                </div>
+            </div>
+        </div>
+        <div id="SalonSpa" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-makeup"></i>
+                    <h3>Makeup and Hair Services</h3>
+                    <p>Starting at ₹1000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <h3>Nail Care</h3>
+                    <p>Starting at ₹500</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Fitness Training</h3>
+                    <p>Starting at ₹800</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-yoga"></i>
+                    <h3>Yoga and Meditation Classes</h3>
+                    <p>Starting at ₹600</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Personal Shopping Assistance</h3>
+                    <p>Starting at ₹700</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Event Planning</h3>
+                    <p>Starting at ₹5000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-camera"></i>
+                    <h3>Photography Services</h3>
+                    <p>Starting at ₹3000</p>
+                </div>
+            </div>
+        </div>
+        <div id="EventPlanning" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Catering Services</h3>
+                    <p>Starting at ₹2000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Decorators</h3>
+                    <p>Starting at ₹5000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-music"></i>
+                    <h3>DJ and Music Services</h3>
+                    <p>Starting at ₹8000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-video"></i>
+                    <h3>Photography and Videography</h3>
+                    <p>Starting at ₹10000</p>
+                </div>
+                               <div class="service-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Wedding Planning</h3>
+                    <p>Starting at ₹20000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Birthday Party Planning</h3>
+                    <p>Starting at ₹5000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Corporate Event Planning</h3>
+                    <p>Starting at ₹15000</p>
+                </div>
+            </div>
+        </div>
+        <div id="TechServices" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Computer Repair and Maintenance</h3>
+                    <p>Starting at ₹500</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Laptop Repair</h3>
+                    <p>Starting at ₹700</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Phone Repair</h3>
+                    <p>Starting at ₹300</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Network and Internet Services</h3>
+                    <p>Starting at ₹1000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Software Development</h3>
+                    <p>Starting at ₹2000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-globe"></i>
+                    <h3>Web Design and Development</h3>
+                    <p>Starting at ₹5000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity Services</h3>
+                    <p>Starting at ₹3000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Recovery</h3>
+                    <p>Starting at ₹2500</p>
+                </div>
+            </div>
+        </div>
+        <div id="Transportation" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-taxi"></i>
+                    <h3>Taxi Services</h3>
+                    <p>Starting at ₹200</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-car"></i>
+                    <h3>Car Rental</h3>
+                    <p>Starting at ₹1500/day</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-motorcycle"></i>
+                    <h3>Bike Rental</h3>
+                    <p>Starting at ₹500/day</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Logistics and Courier Services</h3>
+                    <p>Starting at ₹100</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-plane"></i>
+                    <h3>Travel Agency</h3>
+                    <p>Starting at ₹1000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-map"></i>
+                    <h3>Tour Packages</h3>
+                    <p>Starting at ₹5000</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Hotel Booking</h3>
+                    <p>Starting at ₹2000/night</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-plane-departure"></i>
+                    <h3>Flight Booking</h3>
+                    <p>Starting at ₹3000</p>
+                </div>
+            </div>
+        </div>
+        <div id="OtherServices" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Laundry and Dry Cleaning</h3>
+                    <p>Starting at ₹200</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-home"></i>
+                    <h3>Housekeeping</h3>
+                    <p>Starting at ₹500</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-running"></i>
+                    <h3>Errand Running</h3>
+                    <p>Starting at ₹300</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-boxes"></i>
+                    <h3>Packaging and Moving Services</h3>
+                    <p>Starting at ₹1500</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-warehouse"></i>
+                    <h3>Storage Services</h3>
+                    <p>Starting at ₹1000/month</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-trash"></i>
+                    <h3>Waste Management</h3>
+                    <p>Starting at ₹500</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Services</h3>
+                    <p>Starting at ₹2000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <i class="fas fa-search"></i>
+                <h3>Search</h3>
+                <p>Find the service you need from our extensive list of providers.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Book</h3>
+                <p>Schedule a convenient time for the service to be performed.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-smile"></i>
+                <h3>Relax</h3>
+                <p>Sit back and relax while our professionals take care of everything.</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <marquee class="testimonial-slider" behavior="scroll" direction="left">
+            <div class="testimonial">
+                <p>"Great service! The electrician was professional and fixed everything quickly." - Rajesh K.</p>
+            </div>
+            <div class="testimonial">
+                <p>"I booked a maid service and was very satisfied with the cleanliness and punctuality." - Priya S.</p>
+            </div>
+            <div class="testimonial">
+                <p>"The carpenter did an excellent job with my furniture. Highly recommend!" - Anil M.</p>
+            </div>
+        </marquee>
+    </section>
+    <section class="cta-section">
+        <h2>Get started with our reliable services today!</h2>
+        <button class="cta">Book Now</button>
+    </section>
+    <footer>
+        <div class="contact-info">
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@example.com</p>
+            <p>Address: 123 Main St, Jaunpur</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Service Provider Marketplace. All rights reserved.</p>
+    </footer>
+</body>
+</html>

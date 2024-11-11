@@ -1,0 +1,215 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF; /* Background color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F7DC6F; /* Primary color */
+    color: #333;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF; /* Background color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F7DC6F; /* Primary color */
+    color: #333;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+header .search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #F2F2F2; /* Secondary color */
+}
+
+header .location-finder button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #8BC34A; /* Accent color */
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #333;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero .cta {
+    padding: 1rem 2rem;
+    background-color: #8BC34A; /* Accent color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.services {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.services .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.services .tablink {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #F7DC6F; /* Primary color */
+    color: #333;
+    cursor: pointer;
+}
+
+.services .tabcontent {
+    display: none;
+}
+
+.services .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.services .service-item {
+    background-color: #F7DC6F; /* Primary color */
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.services .service-item i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.how-it-works {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #F2F2F2; /* Secondary color */
+}
+
+.how-it-works .steps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.how-it-works .step {
+    text-align: center;
+}
+
+.how-it-works .step i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonials {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #F2F2F2; /* Secondary color */
+}
+
+.testimonials .testimonial-slider {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.testimonials .testimonial {
+    display: inline-block;
+    background-color: #F7DC6F; /* Primary color */
+    padding: 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.testimonials marquee {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cta-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #F2F2F2; /* Secondary color */
+}
+
+.cta-section .cta {
+    padding: 1rem 2rem;
+    background-color: #8BC34A; /* Accent color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #F7DC6F; /* Primary color */
+    color: #333;
+    text-align: center;
+}
+
+footer .contact-info p,
+footer .social-media a {
+    margin: 0.5rem 0;
+}
+
+footer .social-media a {
+    color: #333;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #8BC34A; /* Accent color */
+}
