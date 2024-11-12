@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Service Provider Marketplace</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="service.html">Logo</a></div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="location-finder"><button>Find Location</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Our Services</h1>
+        <p>Explore the wide range of services we offer to meet your needs.</p>
+    </section>
+    <section class="services">
+        <h2>Service Categories</h2>
+        <div class="service-grid">
+            <div class="service-category" onclick="toggleCategory('home')">
+                <h3>Home and Maintenance</h3>
+                <div id="home" class="subcategory">
+                    <div class="service-item">Daily Laborers<br>Starting at ₹500/day</div>
+                    <div class="service-item">Electricians<br>Starting at ₹300/hour</div>
+                    <div class="service-item">Carpenters<br>Starting at ₹400/hour</div>
+                    <div class="service-item">Maids<br>Starting at ₹200/hour</div>
+                    <div class="service-item">Plumbers<br>Starting at ₹350/hour</div>
+                    <div class="service-item">Painters<br>Starting at ₹500/hour</div>
+                    <div class="service-item">Cleaning Services<br>Starting at ₹1500</div>
+                    <div class="service-item">Pest Control<br>Starting at ₹1200</div>
+                    <div class="service-item">AC Repair and Installation<br>Starting at ₹500</div>
+                    <div class="service-item">Water Purifier Installation and Repair<br>Starting at ₹400</div>
+                </div>
+            </div>
+            <div class="service-category" onclick="toggleCategory('food')">
+                <h3>Food Delivery</h3>
+                <div id="food" class="subcategory">
+                    <div class="service-item">Catering Services<br>Starting at ₹2000</div>
+                    <div class="service-item">Bakery and Confectionery Delivery<br>Starting at ₹500</div>
+                    <div class="service-item">Fresh Fruit and Vegetable Delivery<br>Starting at ₹300</div>
+                    <div class="service-item">Meal Kit Delivery<br>Starting at ₹800</div>
+                    <div class="service-item">Wine and Liquor Delivery<br>Starting at ₹1000</div>
+                    <div class="service-item">Coffee and Tea Delivery<br>Starting at ₹200</div>
+                    <div class="service-item">Snack Delivery<br>Starting at ₹150</div>
+                </div>
+            </div>
+            <div class="service-category" onclick="toggleCategory('salon')">
+                <h3>Salon and Spa</h3>
+                <div id="salon" class="subcategory">
+                    <div class="service-item">Makeup and Hair Services<br>Starting at ₹1000</div>
+                    <div class="service-item">Nail Care<br>Starting at ₹500</div>
+                    <div class="service-item">Fitness Training<br>Starting at ₹800</div>
+                    <div class="service-item">Yoga and Meditation Classes<br>Starting at ₹600</div>
+                    <div class="service-item">Personal Shopping Assistance<br>Starting at ₹700</div>
+                </div>
+            </div>
+            <div class="service-category" onclick="toggleCategory('event')">
+                <h3>Event Planning</h3>
+                <div id="event" class="subcategory">
+                    <div class="service-item">Event Planning<br>Starting at ₹5000</div>
+                    <div class="service-item">Photography Services<br>Starting at ₹3000</div>
+                    <div class="service-item">Catering Services<br>Starting at ₹2000</div>
+                    <div class="service-item">Decorators<br>Starting at ₹5000</div>
+                    <div class="service-item">DJ and Music Services<br>Starting at ₹8000</div>
+                    <div class="service-item">Photography and Videography<br>Starting at ₹10000</div>
+                    <div class="service-item">Wedding Planning<br>Starting at ₹20000</div>
+                    <div class="service-item">Birthday Party Planning<br>Starting at ₹5000</div>
+                    <div class="service-item">Corporate Event Planning<br>Starting at ₹15000</div>
+                </div>
+            </div>
+            <div class="service-category" onclick="toggleCategory('tech')">
+                <h3>Tech Services</h3>
+                <div id="tech" class="subcategory">
+                    <div class="service-item">Computer Repair and Maintenance<br>Starting at ₹500</div>
+                    <div class="service-item">Laptop Repair<br>Starting at ₹700</div>
+                    <div class="service-item">Mobile Phone Repair<br>Starting at ₹300</div>
+                    <div class="service-item">Network and Internet Services<br>Starting at ₹1000</div>
+                    <div class="service-item">Software Development<br>Starting at ₹2000</div>
+                    <div class="service-item">Web Design and Development<br>Starting at ₹5000</div>
+                    <div class="service-item">Cybersecurity Services<br>Starting at ₹3000</div>
+                    <div class="service-item">Data Recovery<br>Starting at ₹2500</div>
+                </div>
+            </div>
+            <div class="service-category" onclick="toggleCategory('transport')">
+                <h3>Transportation</h3>
+                <div id="transport" class="subcategory">
+                    <div class="service-item">Taxi Services<br>Starting at ₹200</div>
+                    <div class="service-item">Car Rental<br>Starting at ₹1500/day</div>
+                    <div class="service-item">Bike Rental<br>Starting at ₹500/day</div>
+                    <div class="service-item">Logistics and Courier Services<br>Starting at ₹100</div>
+                    <div class="service-item">Travel Agency<br>Starting at ₹1000</div>
+                    <div class="service-item">Tour Packages<br>Starting at ₹5000</div>
+                    <div class="service-item">Hotel Booking<br>Starting at ₹2000/night</div>
+                    <div class="service-item">Flight Booking<br>Starting at ₹3000</div>
+                </div>
+            </div>
+            <div class="service-category" onclick="toggleCategory('other')">
+                <h3>Other Services</h3>
+                <div id="other" class="subcategory">
+                    <div class="service-item">Laundry and Dry Cleaning<br>Starting at ₹200</div>
+                    <div class="service-item">Housekeeping<br>Starting at ₹500</div>
+                    <div class="service-item">Errand Running<br>Starting at ₹300</div>
+                    <div class="service-item">Packaging and Moving Services<br>Starting at ₹1500</div>
+                    <div class="service-item">Storage Services<br>Starting at ₹1000/month</div>
+                    <div class="service-item">Waste Management<br>Starting at ₹500</div>
+                    <div class="service-item">Security Services<br>Starting at ₹2000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact-info">
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@example.com</p>
+            <p>Address: 123 Main St, Jaunpur</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>© 2024 Service Provider Marketplace. All rights reserved.</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>
