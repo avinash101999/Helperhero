@@ -37,4 +37,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Form submission function
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var formData = new FormData(this);
+        var data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        fetch('https://script.google.com/macros/s/AKfycbxcM5IzxmdT_b3K4AqyxZbJUwGniYSaJ_ixwhqdu3LGWMwxYa712YMvRw0rMExx_y5Gfg/exec', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            if (result.status === 'success') {
+                alert(result.message);
+            } else {
+                alert('There was an error submitting your booking.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error submitting your booking.');
+        });
+    });
 });
