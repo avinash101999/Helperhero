@@ -45,10 +45,13 @@ header nav ul li a:hover {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    order: 2; /* Ensure the menu icon is on the right */
 }
 
 .nav-links {
     display: flex; /* Ensure nav-links are displayed on larger screens */
+    order: 1; /* Ensure the nav-links are on the left */
+
 }
 
 .nav-links.active {
