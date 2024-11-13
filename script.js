@@ -33,5 +33,3 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!navLinks.contains(event.target) && !menuIcon.contains(event.target)) {
             navLinks.classList.remove('active');
         }
-    });
-});
