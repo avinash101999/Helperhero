@@ -137,6 +137,10 @@ header nav ul li a:hover {
     display: none;
 }
 
+.how-it-works .tabcontent p {
+    display: block;
+}
+
 .testimonials {
     padding: 2rem 1rem;
     text-align: center;
