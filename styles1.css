@@ -41,13 +41,20 @@ header nav ul li a:hover {
     color: #fff;
 }
 
-header .location-finder button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #8BC34A;
-    color: #fff;
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
     cursor: pointer;
+    order: 2; /* Ensure the menu icon is on the right */
+}
+
+.nav-links {
+    display: flex; /* Ensure nav-links are displayed on larger screens */
+    order: 1; /* Ensure the nav-links are on the left */
+}
+
+.nav-links.active {
+    display: block;
 }
 
 .hero {
@@ -73,7 +80,7 @@ header .location-finder button {
 
 .services .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
@@ -82,34 +89,54 @@ header .location-finder button {
     padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    position: relative;
 }
 
-.services .service-category h3 {
-    margin: 0;
-}
-
-.services .service-category:hover {
-    background-color: #8BC34A;
-    color: #fff;
+.services .service-category:hover .subcategory,
+.services .service-category:focus .subcategory,
+.services .service-category:active .subcategory {
+    display: block;
 }
 
 .services .subcategory {
     display: none;
     margin-top: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .services .service-item {
-    background-color: #F7DC6F;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
-    transition: transform 0.3s;
-    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #EEE;
 }
 
-.services .service-item:hover {
-    transform: scale(1.05);
+.services .service-item:last-child {
+    border-bottom: none;
+}
+
+.services .service-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.services .service-item a:hover {
+    text-decoration: underline;
+}
+
+.cta {
+    padding: 0.5rem 1rem;
+    background-color: #8BC34A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
 }
 
 footer {
@@ -136,7 +163,32 @@ footer .social-media a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    header nav ul {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0; /* Align the dropdown to the right */
+        width: 100%;
+        background-color: #F7DC6F;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    nav ul {
         flex-direction: column;
         gap: 0.5rem;
     }
@@ -148,31 +200,44 @@ footer .social-media a:hover {
     .services .service-grid {
         grid-template-columns: 1fr;
     }
-
-    .services .service-category h3 {
-        font-size: 1.2rem;
-    }
-
-    .services .service-item {
-        font-size: 0.9rem;
-    }
 }
 
 @media (max-width: 480px) {
     header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0; /* Align the dropdown to the right */
+        width: 100%;
+        background-color: #F7DC6F;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        gap: 0.5rem;
     }
 
     .hero {
-        padding: 2rem 1rem;
+        padding: 3rem 1rem;
     }
 
-    .services .service-category h3 {
-        font-size: 1rem;
-    }
-
-    .services .service-item {
-        font-size: 0.8rem;
+    .services .service-grid {
+        grid-template-columns: 1fr;
     }
 }
