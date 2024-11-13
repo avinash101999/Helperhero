@@ -51,7 +51,6 @@ header nav ul li a:hover {
 .nav-links {
     display: flex; /* Ensure nav-links are displayed on larger screens */
     order: 1; /* Ensure the nav-links are on the left */
-
 }
 
 .nav-links.active {
@@ -211,7 +210,7 @@ footer .social-media a:hover {
         display: none;
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0; /* Align the dropdown to the right */
         width: 100%;
         background-color: #F7DC6F;
         padding: 1rem;
@@ -250,30 +249,49 @@ footer .social-media a:hover {
 
 @media (max-width: 480px) {
     header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0; /* Align the dropdown to the right */
+        width: 100%;
+        background-color: #F7DC6F;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        gap: 0.5rem;
     }
 
     .hero {
-        padding: 2rem 1rem;
+        padding: 3rem 1rem;
     }
 
     .services .tabs {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    .services .tablink {
-        width: 100%;
-        margin-bottom: 0.5rem;
+    .services .service-grid {
+        grid-template-columns: 1fr;
     }
 
     .how-it-works .tabs {
-        flex-direction: column;
-    }
-
-    .how-it-works .tablink {
-        width: 100%;
-        margin-bottom: 0.5rem;
+        flex-wrap: wrap;
     }
 
     .testimonials .testimonial-slider {
