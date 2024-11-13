@@ -28,29 +28,82 @@
     <section class="services">
         <h2>Our Services</h2>
         <div class="tabs">
-            <button class="tablink" onclick="openTab(event, 'home')">Home and Maintenance</button>
-            <button class="tablink" onclick="openTab(event, 'food')">Food Delivery</button>
-            <button class="tablink" onclick="openTab(event, 'salon')">Salon and Spa</button>
-            <button class="tablink" onclick="openTab(event, 'event')">Event Planning</button>
-            <button class="tablink" onclick="openTab(event, 'tech')">Tech Services</button>
-            <button class="tablink" onclick="openTab(event, 'transport')">Transportation</button>
-            <button class="tablink" onclick="openTab(event, 'other')">Other Services</button>
+            <button class="tablink" onclick="openTab(event, 'home')">🏠 Home and Maintenance</button>
+            <button class="tablink" onclick="openTab(event, 'food')">🍔 Food Delivery</button>
+            <button class="tablink" onclick="openTab(event, 'salon')">💇‍♀️ Salon and Spa</button>
+            <button class="tablink" onclick="openTab(event, 'event')">🎉 Event Planning</button>
+            <button class="tablink" onclick="openTab(event, 'tech')">💻 Tech Services</button>
+            <button class="tablink" onclick="openTab(event, 'transport')">🚗 Transportation</button>
+            <button class="tablink" onclick="openTab(event, 'other')">🔧 Other Services</button>
         </div>
         <div id="home" class="tabcontent">
             <div class="service-grid">
-                <div class="service-item">Daily Laborers<br>Starting at ₹500/day</div>
-                <div class="service-item">Electricians<br>Starting at ₹300/hour</div>
-                <div class="service-item">Carpenters<br>Starting at ₹400/hour</div>
-                <div class="service-item">Maids<br>Starting at ₹200/hour</div>
-                <div class="service-item">Plumbers<br>Starting at ₹350/hour</div>
-                <div class="service-item">Painters<br>Starting at ₹500/hour</div>
-                <div class="service-item">Cleaning Services<br>Starting at ₹1500</div>
-                <div class="service-item">Pest Control<br>Starting at ₹1200</div>
-                <div class="service-item">AC Repair and Installation<br>Starting at ₹500</div>
-                <div class="service-item">Water Purifier Installation and Repair<br>Starting at ₹400</div>
+                <div class="service-item">👷‍♂️ Daily Laborers<br>Starting at ₹500/day</div>
+                <div class="service-item">🔌 Electricians<br>Starting at ₹300/hour</div>
+                <div class="service-item">🪚 Carpenters<br>Starting at ₹400/hour</div>
+                <div class="service-item">🧹 Maids<br>Starting at ₹200/hour</div>
+                <div class="service-item">🔧 Plumbers<br>Starting at ₹350/hour</div>
+                <div class="service-item">🎨 Painters<br>Starting at ₹500/hour</div>
+                <div class="service-item">🧼 Cleaning Services<br>Starting at ₹1500</div>
+                <div class="service-item">🐜 Pest Control<br>Starting at ₹1200</div>
+                <div class="service-item">❄️ AC Repair and Installation<br>Starting at ₹500</div>
+                <div class="service-item">🚰 Water Purifier Installation and Repair<br>Starting at ₹400</div>
             </div>
         </div>
-        <!-- Add similar content for other tabs -->
+        <div id="food" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">🍕 Pizza Delivery<br>Starting at ₹200</div>
+                <div class="service-item">🍔 Burger Delivery<br>Starting at ₹150</div>
+                <div class="service-item">🍣 Sushi Delivery<br>Starting at ₹300</div>
+                <div class="service-item">🥗 Salad Delivery<br>Starting at ₹100</div>
+                <div class="service-item">🍜 Noodle Delivery<br>Starting at ₹200</div>
+            </div>
+        </div>
+        <div id="salon" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">💇‍♂️ Haircut<br>Starting at ₹500</div>
+                <div class="service-item">💅 Manicure<br>Starting at ₹300</div>
+                <div class="service-item">💆‍♀️ Massage<br>Starting at ₹700</div>
+                <div class="service-item">💄 Makeup<br>Starting at ₹1000</div>
+                <div class="service-item">🧖‍♀️ Spa Treatment<br>Starting at ₹1500</div>
+            </div>
+        </div>
+        <div id="event" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">🎂 Birthday Party Planning<br>Starting at ₹5000</div>
+                <div class="service-item">💍 Wedding Planning<br>Starting at ₹20000</div>
+                <div class="service-item">🎤 Corporate Event Planning<br>Starting at ₹10000</div>
+                <div class="service-item">🎈 Decoration Services<br>Starting at ₹3000</div>
+                <div class="service-item">📸 Photography Services<br>Starting at ₹5000</div>
+            </div>
+        </div>
+        <div id="tech" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">💻 Computer Repair<br>Starting at ₹500</div>
+                <div class="service-item">📱 Mobile Repair<br>Starting at ₹300</div>
+                <div class="service-item">🖥️ Network Setup<br>Starting at ₹1000</div>
+                <div class="service-item">🔧 Software Installation<br>Starting at ₹200</div>
+                <div class="service-item">🖨️ Printer Repair<br>Starting at ₹400</div>
+            </div>
+        </div>
+        <div id="transport" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">🚕 Taxi Service<br>Starting at ₹100/km</div>
+                <div class="service-item">🚚 Moving Service<br>Starting at ₹2000</div>
+                <div class="service-item">🚲 Bike Rental<br>Starting at ₹500/day</div>
+                <div class="service-item">🚗 Car Rental<br>Starting at ₹1500/day</div>
+                <div class="service-item">🛵 Scooter Rental<br>Starting at ₹300/day</div>
+            </div>
+        </div>
+        <div id="other" class="tabcontent">
+            <div class="service-grid">
+                <div class="service-item">🔧 Handyman Services<br>Starting at ₹300/hour</div>
+                <div class="service-item">🧳 Travel Planning<br>Starting at ₹1000</div>
+                <div class="service-item">📦 Courier Services<br>Starting at ₹100</div>
+                <div class="service-item">🧑‍🏫 Tutoring Services<br>Starting at ₹500/hour</div>
+                <div class="service-item">🎨 Art and Craft Classes<br>Starting at ₹400/hour</div>
+            </div>
+        </div>
     </section>
     <section class="how-it-works">
         <h2>How It Works</h2>
@@ -83,7 +136,7 @@
             <button class="cta">Book Now</button>
         </a>
     </section>
-    <footer>
+        <footer>
         <div class="contact-info">
             <p>Phone: 123-456-7890</p>
             <p>Email: info@example.com</p>
