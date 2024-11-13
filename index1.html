@@ -9,12 +9,12 @@
 <body>
     <header>
         <div class="logo"><a href="index.html">🇾</a></div>
-        <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="index1.html">Services</a></li>
                 <li><a href="https://avinash101999.github.io/book/">Contact</a></li>
-               
             </ul>
         </nav>
     </header>
@@ -25,94 +25,101 @@
     <section class="services">
         <h2>Service Categories</h2>
         <div class="service-grid">
-            <div class="service-category" onclick="toggleCategory('home')">
+            <div class="service-category" onmouseover="toggleCategory('home')" onclick="toggleCategory('home')">
                 <h3>Home and Maintenance</h3>
                 <div id="home" class="subcategory">
-                    <div class="service-item">Daily Laborers<br>Starting at ₹500/day</div>
-                    <div class="service-item">Electricians<br>Starting at ₹300/hour</div>
-                    <div class="service-item">Carpenters<br>Starting at ₹400/hour</div>
-                    <div class="service-item">Maids<br>Starting at ₹200/hour</div>
-                    <div class="service-item">Plumbers<br>Starting at ₹350/hour</div>
-                    <div class="service-item">Painters<br>Starting at ₹500/hour</div>
-                    <div class="service-item">Cleaning Services<br>Starting at ₹1500</div>
-                    <div class="service-item">Pest Control<br>Starting at ₹1200</div>
-                    <div class="service-item">AC Repair and Installation<br>Starting at ₹500</div>
-                    <div class="service-item">Water Purifier Installation and Repair<br>Starting at ₹400</div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Daily%20Laborers">Daily Laborers<br>Starting at ₹500/day</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Electricians">Electricians<br>Starting at ₹300/hour</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Carpenters">Carpenters<br>Starting at ₹400/hour</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Maids">Maids<br>Starting at ₹200/hour</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Plumbers">Plumbers<br>Starting at ₹350/hour</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Painters">Painters<br>Starting at ₹500/hour</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Cleaning%20Services">Cleaning Services<br>Starting at ₹1500</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Pest%20Control">Pest Control<br>Starting at ₹1200</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=AC%20Repair%20and%20Installation">AC Repair and Installation<br>Starting at ₹500</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Water%20Purifier%20Installation%20and%20Repair">Water Purifier Installation and Repair<br>Starting at ₹400</a></div>
                 </div>
+                <button class="cta">Book Now</button>
             </div>
-            <div class="service-category" onclick="toggleCategory('food')">
+            <div class="service-category" onmouseover="toggleCategory('food')" onclick="toggleCategory('food')">
                 <h3>Food Delivery</h3>
                 <div id="food" class="subcategory">
-                    <div class="service-item">Catering Services<br>Starting at ₹2000</div>
-                    <div class="service-item">Bakery and Confectionery Delivery<br>Starting at ₹500</div>
-                    <div class="service-item">Fresh Fruit and Vegetable Delivery<br>Starting at ₹300</div>
-                    <div class="service-item">Meal Kit Delivery<br>Starting at ₹800</div>
-                    <div class="service-item">Wine and Liquor Delivery<br>Starting at ₹1000</div>
-                    <div class="service-item">Coffee and Tea Delivery<br>Starting at ₹200</div>
-                    <div class="service-item">Snack Delivery<br>Starting at ₹150</div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Catering%20Services">Catering Services<br>Starting at ₹2000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Bakery%20and%20Confectionery%20Delivery">Bakery and Confectionery Delivery<br>Starting at ₹500</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Fresh%20Fruit%20and%20Vegetable%20Delivery">Fresh Fruit and Vegetable Delivery<br>Starting at ₹300</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Meal%20Kit%20Delivery">Meal Kit Delivery<br>Starting at ₹800</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Wine%20and%20Liquor%20Delivery">Wine and Liquor Delivery<br>Starting at ₹1000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Coffee%20and%20Tea%20Delivery">Coffee and Tea Delivery<br>Starting at ₹200</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Snack%20Delivery">Snack Delivery<br>Starting at ₹150</a></div>
                 </div>
+                <button class="cta">Book Now</button>
             </div>
-            <div class="service-category" onclick="toggleCategory('salon')">
+            <div class="service-category" onmouseover="toggleCategory('salon')" onclick="toggleCategory('salon')">
                 <h3>Salon and Spa</h3>
                 <div id="salon" class="subcategory">
-                    <div class="service-item">Makeup and Hair Services<br>Starting at ₹1000</div>
-                    <div class="service-item">Nail Care<br>Starting at ₹500</div>
-                    <div class="service-item">Fitness Training<br>Starting at ₹800</div>
-                    <div class="service-item">Yoga and Meditation Classes<br>Starting at ₹600</div>
-                    <div class="service-item">Personal Shopping Assistance<br>Starting at ₹700</div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Makeup%20and%20Hair%20Services">Makeup and Hair Services<br>Starting at ₹1000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Nail%20Care">Nail Care<br>Starting at ₹500</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Fitness%20Training">Fitness Training<br>Starting at ₹800</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Yoga%20and%20Meditation%20Classes">Yoga and Meditation Classes<br>Starting at ₹600</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Personal%20Shopping%20Assistance">Personal Shopping Assistance<br>Starting at ₹700</a></div>
                 </div>
+                <button class="cta">Book Now</button>
             </div>
-            <div class="service-category" onclick="toggleCategory('event')">
+            <div class="service-category" onmouseover="toggleCategory('event')" onclick="toggleCategory('event')">
                 <h3>Event Planning</h3>
                 <div id="event" class="subcategory">
-                    <div class="service-item">Event Planning<br>Starting at ₹5000</div>
-                    <div class="service-item">Photography Services<br>Starting at ₹3000</div>
-                    <div class="service-item">Catering Services<br>Starting at ₹2000</div>
-                    <div class="service-item">Decorators<br>Starting at ₹5000</div>
-                    <div class="service-item">DJ and Music Services<br>Starting at ₹8000</div>
-                    <div class="service-item">Photography and Videography<br>Starting at ₹10000</div>
-                    <div class="service-item">Wedding Planning<br>Starting at ₹20000</div>
-                    <div class="service-item">Birthday Party Planning<br>Starting at ₹5000</div>
-                    <div class="service-item">Corporate Event Planning<br>Starting at ₹15000</div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Event%20Planning">Event Planning<br>Starting at ₹5000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Photography%20Services">Photography Services<br>Starting at ₹3000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Catering%20Services">Catering Services<br>Starting at ₹2000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Decorators">Decorators<br>Starting at ₹5000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=DJ%20and%20Music%20Services">DJ and Music Services<br>Starting at ₹8000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Photography%20and%20Videography">Photography and Videography<br>Starting at ₹10000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Wedding%20Planning">Wedding Planning<br>Starting at ₹20000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Birthday%20Party%20Planning">Birthday Party Planning<br>Starting at ₹5000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Corporate%20Event%20Planning">Corporate Event Planning<br>Starting at ₹15000</a></div>
                 </div>
+                <button class="cta">Book Now</button>
             </div>
-            <div class="service-category" onclick="toggleCategory('tech')">
+                        <div class="service-category" onmouseover="toggleCategory('tech')" onclick="toggleCategory('tech')">
                 <h3>Tech Services</h3>
                 <div id="tech" class="subcategory">
-                    <div class="service-item">Computer Repair and Maintenance<br>Starting at ₹500</div>
-                    <div class="service-item">Laptop Repair<br>Starting at ₹700</div>
-                    <div class="service-item">Mobile Phone Repair<br>Starting at ₹300</div>
-                    <div class="service-item">Network and Internet Services<br>Starting at ₹1000</div>
-                    <div class="service-item">Software Development<br>Starting at ₹2000</div>
-                    <div class="service-item">Web Design and Development<br>Starting at ₹5000</div>
-                    <div class="service-item">Cybersecurity Services<br>Starting at ₹3000</div>
-                    <div class="service-item">Data Recovery<br>Starting at ₹2500</div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Computer%20Repair%20and%20Maintenance">Computer Repair and Maintenance<br>Starting at ₹500</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Laptop%20Repair">Laptop Repair<br>Starting at ₹700</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Mobile%20Phone%20Repair">Mobile Phone Repair<br>Starting at ₹300</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Network%20and%20Internet%20Services">Network and Internet Services<br>Starting at ₹1000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Software%20Development">Software Development<br>Starting at ₹2000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Web%20Design%20and%20Development">Web Design and Development<br>Starting at ₹5000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Cybersecurity%20Services">Cybersecurity Services<br>Starting at ₹3000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Data%20Recovery">Data Recovery<br>Starting at ₹2500</a></div>
                 </div>
+                <button class="cta">Book Now</button>
             </div>
-            <div class="service-category" onclick="toggleCategory('transport')">
+            <div class="service-category" onmouseover="toggleCategory('transport')" onclick="toggleCategory('transport')">
                 <h3>Transportation</h3>
                 <div id="transport" class="subcategory">
-                    <div class="service-item">Taxi Services<br>Starting at ₹200</div>
-                    <div class="service-item">Car Rental<br>Starting at ₹1500/day</div>
-                    <div class="service-item">Bike Rental<br>Starting at ₹500/day</div>
-                    <div class="service-item">Logistics and Courier Services<br>Starting at ₹100</div>
-                    <div class="service-item">Travel Agency<br>Starting at ₹1000</div>
-                    <div class="service-item">Tour Packages<br>Starting at ₹5000</div>
-                    <div class="service-item">Hotel Booking<br>Starting at ₹2000/night</div>
-                    <div class="service-item">Flight Booking<br>Starting at ₹3000</div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Taxi%20Services">Taxi Services<br>Starting at ₹200</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Car%20Rental">Car Rental<br>Starting at ₹1500/day</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Bike%20Rental">Bike Rental<br>Starting at ₹500/day</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Logistics%20and%20Courier%20Services">Logistics and Courier Services<br>Starting at ₹100</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Travel%20Agency">Travel Agency<br>Starting at ₹1000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Tour%20Packages">Tour Packages<br>Starting at ₹5000</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Hotel%20Booking">Hotel Booking<br>Starting at ₹2000/night</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Flight%20Booking">Flight Booking<br>Starting at ₹3000</a></div>
                 </div>
+                <button class="cta">Book Now</button>
             </div>
-            <div class="service-category" onclick="toggleCategory('other')">
+            <div class="service-category" onmouseover="toggleCategory('other')" onclick="toggleCategory('other')">
                 <h3>Other Services</h3>
                 <div id="other" class="subcategory">
-                    <div class="service-item">Laundry and Dry Cleaning<br>Starting at ₹200</div>
-                    <div class="service-item">Housekeeping<br>Starting at ₹500</div>
-                    <div class="service-item">Errand Running<br>Starting at ₹300</div>
-                    <div class="service-item">Packaging and Moving Services<br>Starting at ₹1500</div>
-                    <div class="service-item">Storage Services<br>Starting at ₹1000/month</div>
-                    <div class="service-item">Waste Management<br>Starting at ₹500</div>
-                    <div class="service-item">Security Services<br>Starting at ₹2000</div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Laundry%20and%20Dry%20Cleaning">Laundry and Dry Cleaning<br>Starting at ₹200</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Housekeeping">Housekeeping<br>Starting at ₹500</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Errand%20Running">Errand Running<br>Starting at ₹300</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Packaging%20and%20Moving%20Services">Packaging and Moving Services<br>Starting at ₹1500</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Storage%20Services">Storage Services<br>Starting at ₹1000/month</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Waste%20Management">Waste Management<br>Starting at ₹500</a></div>
+                    <div class="service-item"><a href="https://avinash101999.github.io/book/?service=Security%20Services">Security Services<br>Starting at ₹2000</a></div>
                 </div>
+                <button class="cta">Book Now</button>
             </div>
         </div>
     </section>
