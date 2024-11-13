@@ -41,13 +41,18 @@ header nav ul li a:hover {
     color: #fff;
 }
 
-header .location-finder button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #8BC34A;
-    color: #fff;
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
     cursor: pointer;
+}
+
+.nav-links {
+    display: flex; /* Ensure nav-links are displayed on larger screens */
+}
+
+.nav-links.active {
+    display: block;
 }
 
 .hero {
@@ -189,7 +194,32 @@ footer .social-media a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    header nav ul {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #F7DC6F;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    nav ul {
         flex-direction: column;
         gap: 0.5rem;
     }
@@ -247,4 +277,3 @@ footer .social-media a:hover {
         flex-direction: column;
     }
 }
-
