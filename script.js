@@ -1,20 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Location finder function
-    function findLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            alert("Geolocation is not supported by this browser.");
-        }
-    }
-
-    function showPosition(position) {
-        alert("Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
-    }
-
-    // Add event listener to location finder button
-    document.querySelector('.location-finder button').addEventListener('click', findLocation);
-
     // Tab functionality
     function openTab(evt, tabName) {
         let i, tabcontent, tablinks;
@@ -32,4 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Set default tab to open
     document.querySelector('.tablink').click();
+
+    // Toggle menu function
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+
+    // Add event listener to menu icon
+    document.querySelector('.menu-icon').addEventListener('click', toggleMenu);
 });
